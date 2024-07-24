@@ -1,0 +1,512 @@
+2024-06-11 09:37:13,079 INFO o.s.b.StartupInfoLogger [main] Starting ECrfServicesApplication using Java 17.0.11 with PID 19336 (C:\Users\SKTS Admin\Desktop\Backend\Backend\eCRF_Services_latest\target\classes started by SKTS Admin in C:\Users\SKTS Admin\Desktop\Backend\Backend\eCRF_Services_latest)
+2024-06-11 09:37:13,097 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-06-11 09:37:13,101 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-11 09:37:13,910 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-11 09:37:14,018 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 95 ms. Found 6 JPA repository interfaces.
+2024-06-11 09:37:14,465 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-06-11 09:37:14,477 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-11 09:37:14,479 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-11 09:37:14,481 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-06-11 09:37:14,553 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-11 09:37:14,553 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1412 ms
+2024-06-11 09:37:14,627 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'authenticationJwtTokenFilter' configured for use
+2024-06-11 09:37:14,741 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-11 09:37:14,823 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-06-11 09:37:14,868 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-11 09:37:15,007 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-11 09:37:15,194 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24eecabf
+2024-06-11 09:37:15,196 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-11 09:37:15,269 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-11 09:37:15,496 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-11 09:37:15,745 WARN i.h.u.h.t.j.i.JsonJavaTypeDescriptor [main] The class java.lang.Object class should override both the equals and hashCode methods based on the JSON object value it represents!
+2024-06-11 09:37:16,657 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-11 09:37:16,768 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-11 09:37:17,009 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-11 09:37:17,101 INFO c.e.ECrfServicesApplication [main] Application Method Entry-getXLSReader()
+2024-06-11 09:37:17,101 INFO c.e.ECrfServicesApplication [main] Application Method Exit-getXLSReader()
+2024-06-11 09:37:17,463 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-11 09:37:17,850 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-11 09:37:17,870 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-06-11 09:37:17,882 INFO o.s.b.StartupInfoLogger [main] Started ECrfServicesApplication in 5.279 seconds (process running for 6.262)
+2024-06-11 09:37:17,883 INFO c.e.s.ExportImportConfigLoader [main] Entry ExportImportConfigLoader : onApplicationEvent() 
+2024-06-11 09:37:17,884 INFO c.e.s.ExportImportConfigLoader [main] Entry ExportImportConfigLoader : loadConfigFromExcel() 
+2024-06-11 09:37:18,433 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='studyTitle', columnName='Protocol ID/Title', section='section1'}
+2024-06-11 09:37:18,434 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='projectNo', columnName='Sponsor Code / Name', section='section1'}
+2024-06-11 09:37:18,435 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='siteId', columnName='Site ID', section='section1'}
+2024-06-11 09:37:18,437 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='studyDate', columnName='Date', section='section1'}
+2024-06-11 09:37:18,444 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectId', columnName='Subject ID', section='section2'}
+2024-06-11 09:37:18,447 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectYear', columnName='Year of Birth (if avilable)', section='section2'}
+2024-06-11 09:37:18,447 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectUnknown', columnName='Year of Birth (Unknown)', section='section2'}
+2024-06-11 09:37:18,451 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectGender', columnName='Gender', section='section2'}
+2024-06-11 09:37:18,453 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='otherCheck', columnName='Ethnicity', section='section2'}
+2024-06-11 09:37:18,453 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectOtherText', columnName='If Other Specify: _______', section='section2'}
+2024-06-11 09:37:18,454 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='placeOfBirthCity', columnName='Place of Birth City', section='section2'}
+2024-06-11 09:37:18,454 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='placeOfBirthState', columnName='Place of Birth State', section='section2'}
+2024-06-11 09:37:18,454 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='residencyCity', columnName='Residence City', section='section2'}
+2024-06-11 09:37:18,455 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='residencyState', columnName='Residence State', section='section2'}
+2024-06-11 09:37:18,455 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHcc', columnName='Date of HCC diagnosis', section='section3'}
+2024-06-11 09:37:18,455 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='baseLineIfDate', columnName='If date not available, Mention approximate year', section='section3'}
+2024-06-11 09:37:18,456 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='baseLineAgeOfHcc', columnName='Age at HCC Diagnosis (Completed years)', section='section3'}
+2024-06-11 09:37:18,456 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='baseLineHeight', columnName='Height (in cms)', section='section3'}
+2024-06-11 09:37:18,456 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='weightHggBaseLine', columnName='Weight (closest to the date of HCC diagnosis) in Kg', section='section3'}
+2024-06-11 09:37:18,457 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bmiBaseLine', columnName='Body Mass Index (BMI) Kg/m2', section='section3'}
+2024-06-11 09:37:18,460 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='insuranceValue', columnName='Type of insurance', section='section3'}
+2024-06-11 09:37:18,461 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='insuraceValueOtherBaseline', columnName='If Others', section='section3'}
+2024-06-11 09:37:18,462 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='insuraceDetailsBaseLine', columnName='Insurance Details', section='section3'}
+2024-06-11 09:37:18,462 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alanineValue', columnName='Alanine Aminotransferase(ALT)', section='section4'}
+2024-06-11 09:37:18,462 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alanineFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,463 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alanineTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,463 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Units/L', section=''}
+2024-06-11 09:37:18,464 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='aspartateValue', columnName='Aspartate aminotransferase(AST)', section='section4'}
+2024-06-11 09:37:18,465 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='aspartateFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,466 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='aspartateTo', columnName='Reference Range-Upper Limit', section='section4'}
+2024-06-11 09:37:18,469 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Units/L', section=''}
+2024-06-11 09:37:18,470 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bilirubinValue', columnName='Total Billirubin', section='section4'}
+2024-06-11 09:37:18,472 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bilirubinFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,472 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bilirubinTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,472 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 09:37:18,473 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alkalineValue', columnName='Alkaline Phosphatase (ALP)', section='section4'}
+2024-06-11 09:37:18,473 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alkalineFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,473 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alkalineTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,473 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Units/L', section=''}
+2024-06-11 09:37:18,474 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='albuminValue', columnName='Albumin', section='section4'}
+2024-06-11 09:37:18,475 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='albuminFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,475 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='albuminTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,476 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='g/ dL', section=''}
+2024-06-11 09:37:18,476 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='platelatesValue', columnName='Platelets', section='section4'}
+2024-06-11 09:37:18,478 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='platelatesFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,478 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='platelatesTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,478 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName=' k/μL (X 109 /μL)', section=''}
+2024-06-11 09:37:18,479 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='creatinineValue', columnName='Creatinine ', section='section4'}
+2024-06-11 09:37:18,479 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='creatinineFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,479 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='creatinineTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,480 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 09:37:18,481 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='prothrombinValue', columnName='Prothrombin Time (PT)', section='section4'}
+2024-06-11 09:37:18,481 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='prothrombinFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,482 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='prothrombinTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,482 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Seconds', section=''}
+2024-06-11 09:37:18,483 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='internationalValue', columnName='International normalized ratio (INR)', section='section4'}
+2024-06-11 09:37:18,484 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='internationalFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,484 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='internationalTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,484 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='N/A', section=''}
+2024-06-11 09:37:18,484 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alphaValue', columnName='Alpha-fetoprotein (AFP)', section='section4'}
+2024-06-11 09:37:18,485 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alphaFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,485 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alphaTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,485 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='ng/ mL', section=''}
+2024-06-11 09:37:18,486 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sodiumValue', columnName='Sodium (Na)', section='section4'}
+2024-06-11 09:37:18,487 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sodiumFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 09:37:18,487 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sodiumTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 09:37:18,487 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Mmol/l', section=''}
+2024-06-11 09:37:18,488 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bloodUreaValue', columnName='Blood Urea Nitrogen', section='section4'}
+2024-06-11 09:37:18,488 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bloodUreaFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 09:37:18,488 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bloodUreaTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 09:37:18,488 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 09:37:18,488 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cholesterolValue', columnName='Cholesterol', section='section4'}
+2024-06-11 09:37:18,489 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cholesterolFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 09:37:18,489 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cholesterolTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 09:37:18,489 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 09:37:18,489 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='triglyceridesValue', columnName='Triglycerides', section='section4'}
+2024-06-11 09:37:18,489 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='triglyceridesFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 09:37:18,490 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='triglyceridesTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 09:37:18,490 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 09:37:18,491 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='highDensityValue', columnName='High Density Lipo-proteins(HDL)', section='section4'}
+2024-06-11 09:37:18,492 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='highDenistyFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 09:37:18,493 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='highDensityTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 09:37:18,493 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 09:37:18,493 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lowDensityValue', columnName='Low Density Lipo-protein(LDL)', section='section4'}
+2024-06-11 09:37:18,493 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lowDensityFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 09:37:18,493 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lowDensityTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 09:37:18,494 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 09:37:18,495 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='modelEndStageLab', columnName='Model for End stage liver disease
+(Meld) Na score for Cirrhosis
+ Patients: Applicable / Not Applicable ', section='section4'}
+2024-06-11 09:37:18,496 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='modelEndStageTextArea', columnName='Model for End stage liver disease
+(Meld) Na score for Cirrhosis
+ Patients: if applicable, Score ________', section='section4'}
+2024-06-11 09:37:18,496 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='meldScoreLab', columnName='MELD Score', section='section4'}
+2024-06-11 09:37:18,496 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fib4Lab', columnName='FIB4', section='section4'}
+2024-06-11 09:37:18,496 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='astPlateletLab', columnName='AST to Platelet Ratio Index (APRI)', section='section4'}
+2024-06-11 09:37:18,496 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='diabetesComorbidities', columnName='Diabetes: Yes / No / Unknown', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='diabetesAfter', columnName='Diabetes: if Yes (Prior To / After / NAV)', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesDiabetesInput', columnName='Diabetes:if Yes, No.of Years', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hypertensionComorbidities', columnName='Hypertension:Yes / No / Unknown', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hypertensionAfter', columnName='Hypertension:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesHyperTensionInput', columnName='Hypertension:if Yes, No.of Years', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dyslipidemiaComorbidities', columnName='Dyslipidemia:Yes / No / Unknown', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dysliAfter', columnName='Dyslipidemia:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 09:37:18,497 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesDyslipidemiaInput', columnName='Dyslipidemia:if Yes, No.of Years', section='section5'}
+2024-06-11 09:37:18,498 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='coronaryComorbidities', columnName='Coronary artery disease:Yes / No / Unknown', section='section5'}
+2024-06-11 09:37:18,499 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='coronaryAfter', columnName='Coronary artery disease:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 09:37:18,499 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesCoronaryInput', columnName='Coronary artery disease:if Yes, No.of Years', section='section5'}
+2024-06-11 09:37:18,499 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='peripheralComorbidities', columnName='Peripheral Vascular Disease:Yes / No / Unknown', section='section5'}
+2024-06-11 09:37:18,499 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='peripheralAfter', columnName='Peripheral Vascular Disease:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 09:37:18,499 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesPeripheralInput', columnName='Peripheral Vascular Disease:if Yes, No.of Years', section='section5'}
+2024-06-11 09:37:18,500 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivComorbidities', columnName='HIV:Yes / No / Unknown', section='section5'}
+2024-06-11 09:37:18,500 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivAfter', columnName='HIV:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesHivInput', columnName='HIV:if Yes, No.of Years', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='nonLiverCancer', columnName='Non-liver Cancer:Yes / No ', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesLocationSiteValue', columnName='Non-liver Cancer:if Yes, Location / Site _______', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesStageValue', columnName='Non-liver Cancer:if Yes, Stage _______', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesYearOfDiagnosis', columnName='Non-liver Cancer:if Yes, Year of Diagnosis _______', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alcoholConsumptionValue', columnName='Alcohol Consumption / Abuse', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alcoholConsumptionValueSub', columnName='Alcohol Consumption / Abuse:if Yes, Enter Comments_________', section='section5'}
+2024-06-11 09:37:18,501 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='diagnosisInformationValue', columnName='HCC diagnosis Information - Method of diagnosis', section='section6'}
+2024-06-11 09:37:18,502 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisInfoValueOtherSpecify', columnName='HCC diagnosis Information - Method of diagnosis:☐ Other (specify) __________________', section='section6'}
+2024-06-11 09:37:18,502 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='typeOfImagine', columnName='Type of Imaging ', section='section6'}
+2024-06-11 09:37:18,502 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='typeOfImagineText', columnName='Type of Imaging :☐ Other (specify) __________________', section='section6'}
+2024-06-11 09:37:18,502 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisImagingDate', columnName='Date of Imaging (first) Found', section='section6'}
+2024-06-11 09:37:18,502 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisImagingUnkown', columnName='Date of Imaging (first) Found:or ☐ Unknown', section='section6'}
+2024-06-11 09:37:18,503 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisTissueDate', columnName='Date of Tissue Diagnosis', section='section6'}
+2024-06-11 09:37:18,503 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisTissueUnknown', columnName='Date of Tissue Diagnosis:or ☐ Unknown', section='section6'}
+2024-06-11 09:37:18,503 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='largeTurmorValue', columnName='Largest tumor size/diameter (if multiple nodules, include only the largest)', section='section7'}
+2024-06-11 09:37:18,503 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tPrimaryValue', columnName='T (Primary tumor)(as per Current TNM HCC classification)', section='section7'}
+2024-06-11 09:37:18,504 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='nRegionalValue', columnName='N (Regional lymph nodes)        (as per Current TNM HCC classification)', section='section7'}
+2024-06-11 09:37:18,504 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='mRegionalValue', columnName='M (distant metastasis) (as per Current TNM HCC classification)', section='section7'}
+2024-06-11 09:37:18,504 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='anatomicStageTNM', columnName='Anatomic Stage(as per Current TNM HCC classification)', section='section7'}
+2024-06-11 09:37:18,504 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tumorDiffValue', columnName='Tumor Differentiation', section='section7'}
+2024-06-11 09:37:18,505 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='ecogperformace', columnName='ECOG performance score (or Karnofsky equivalent) (as per Current ECOG performance scale if applicable)', section='section7'}
+2024-06-11 09:37:18,505 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tumorStageValue', columnName='Tumor Stage', section='section7'}
+2024-06-11 09:37:18,505 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='typeOfVascular', columnName='Type of vascular invasion/extrahepatic spread', section='section7'}
+2024-06-11 09:37:18,506 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='microvascularInvasion', columnName='Is Microvascular invasion present on histology? (fill only if macrovascular invasion is absent', section='section7'}
+2024-06-11 09:37:18,507 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tumorWithinMilan', columnName='Tumor within Milan Criteria', section='section7'}
+2024-06-11 09:37:18,507 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='childPughClassfication', columnName='Child-Pugh classification (at time of diagnosis)', section='section7'}
+2024-06-11 09:37:18,507 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='barcelonaClinic', columnName='Barcelona clinic liver cancer (BCLC) stage', section='section7'}
+2024-06-11 09:37:18,508 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fattyLiverCLD', columnName='Is fatty liver present?', section='section8'}
+2024-06-11 09:37:18,508 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fattyLiverRadioLast', columnName='Fatty liver diagnostic modality', section='section8'}
+2024-06-11 09:37:18,509 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fattyLiverDiagnosticFreeText', columnName='Fatty liver diagnostic modality free text', section='section8'}
+2024-06-11 09:37:18,509 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cirrhosisStatusValue', columnName='Cirrhosis Status', section='section8'}
+2024-06-11 09:37:18,509 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='mittalCriteriaValue', columnName='Mittal’s Criteria', section='section8'}
+2024-06-11 09:37:18,509 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='underlyingEtiologyValue', columnName='Underlying Etiology', section='section8'}
+2024-06-11 09:37:18,509 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='etiologyCirrhosisFreeValue', columnName='Etiology of Cirrhosis free text', section='section8'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='complicationCLD', columnName='Complications (at the time of HCC diagnosis)', section='section8'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccOutcomeValue', columnName='Treatment modalities', section='section9'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='treamentModalitiesHCC', columnName='Treatment modalities explanation (free text)', section='section9'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='resectionPerformed', columnName='If resection was performed : Stage of fibrosis in background liver', section='section9'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='liverTransplantValue', columnName='If liver transplant was performed : Stage of fibrosis in explanted liver', section='section9'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='recurrenceValue', columnName='Recurrence?', section='section9'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfFirstRecurrence', columnName='Date of first recurrence', section='section9'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='survivalStatusValue', columnName='Survival status', section='section9'}
+2024-06-11 09:37:18,510 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfDeath', columnName='Date of death', section='section9'}
+2024-06-11 09:37:18,511 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfDeathUnknown', columnName='Date of death Unknown', section='section9'}
+2024-06-11 09:37:18,511 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfLastContact', columnName='Date of last contact (if patient is alive or dead 
+but unknown date of death)', section='section9'}
+2024-06-11 09:37:18,511 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lastContactUnknown', columnName='Date of last contact (if patient is alive or dead 
+but unknown date of death) Unknown', section='section9'}
+2024-06-11 09:37:18,511 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfRecurrenceFree', columnName='Recurrence-free survival (days)', section='section9'}
+2024-06-11 09:37:18,511 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfOverallSurvival', columnName='Overall survival (days)', section='section9'}
+2024-06-11 09:37:18,512 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='screeningQuestion', columnName='how was the HCC diagnosed?', section='section10'}
+2024-06-11 09:37:18,512 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='screening2Years', columnName='Any method of screening found within 2 years 
+before HCC diagnosis?', section='section10'}
+2024-06-11 09:37:18,516 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='screening1Year', columnName='Any method of screening found within 1 year 
+before HCC diagnosis?', section='section10'}
+2024-06-11 09:37:18,516 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='methodOfScreening', columnName='Method of screening?', section='section10'}
+2024-06-11 09:37:18,516 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='methodOfScreeningTxt', columnName='Method of screening? : other', section='section10'}
+2024-06-11 09:37:18,516 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='historyHIV', columnName='History of HIV', section='section11'}
+2024-06-11 09:37:18,516 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yearOfHIVHCC', columnName='Year of HIV diagnosis', section='section11'}
+2024-06-11 09:37:18,516 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHIVDurationFrom', columnName='Duration of HIV (years)', section='section11'}
+2024-06-11 09:37:18,516 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivRNAHCC', columnName='HIV RNA Level (most recent)', section='section11'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='belowRadioHCC', columnName='If HIV RNA level is below lower limit of detection, (Fill the following)', section='section11'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivCD4', columnName='CD4 (%) (Clusters of differentiation 4)', section='section11'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivAbsoluteCD4', columnName='Absolute CD4 (cells/uL)', section='section11'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivCD4CellCount', columnName='CD4 Cell Count Nadir (if known)', section='section11'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivInitialHIV1', columnName='Initial HIV-1 RNA Level (if known)', section='section11'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='maximumHIVRNA', columnName='Maximum HIV-1 RNA Level (if known)', section='section11'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isDateHCVDiagnosis', columnName='Is date of HCV diagnosis known?', section='section12'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHCVCVirus', columnName='Date of HCV diagnosis', section='section12'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isHCViralCVirus', columnName='Is HCV viral load known', section='section12'}
+2024-06-11 09:37:18,517 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='HCVviralTimeOfHCCDiagnosis', columnName='HCV viral load at time of HCC diagnosis', section='section12'}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvGenotype', columnName='HCV genotype', section='section12'}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='wasHCVReceivedBeforeAfter', columnName='Was HCV treatment received before or 
+after initial HCC diagnosis?', section='section12'}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvTreatmentCVirus', columnName='HCV treatment type', section='section12'}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvTreatedYear', columnName='When was HCV treated (year)', section='section12'}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvViralLoadAfterTreatment', columnName='Is HCV viral load after treatment known?', section='section12'}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvPostTreatment', columnName='HCV viral load post treatment', section='section12'}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 09:37:18,518 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sustainedHCV', columnName='"Sustained virological response (SVR) after 
+HCV treatment (undetectable HCV RNA 
+12 weeks after completion of treatment"', section='section12'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yearSVRHCV', columnName='Year SVR achieved', section='section12'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isDateHBVDiagnosis', columnName='Is date of HBV diagnosis known?', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHBVBVirus', columnName='Date of HBV diagnosis', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isHBViralBVirus', columnName='Is HBV viral load known', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='HBVviralTimeOfHCCDiagnosis', columnName='HBV viral load at time of HCC diagnosis', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='wasHBVReceivedBeforeAfter', columnName='Was HBV treatment received before or 
+after initial HCC diagnosis?', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvTreatmentBVirus', columnName='HCV treatment type', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHBVTreatmentYear', columnName='When was HBV treated (year)', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hbvViralLoadAfterTreatment', columnName='Is HBV viral load after treatment known?', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hbvPostTreatment', columnName='HBV viral load post treatment', section='section13'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='changedBy', columnName='changed By', section='section14'}
+2024-06-11 09:37:18,519 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='changedOn', columnName='changed On', section='section14'}
+2024-06-11 09:37:18,520 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='createdBy', columnName='created By', section='section14'}
+2024-06-11 09:37:18,520 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='createdOn', columnName='created On', section='section14'}
+2024-06-11 09:37:18,520 INFO c.e.s.ExportImportConfigLoader [main] Exit ExportImportConfigLoader : loadConfigFromExcel() 
+2024-06-11 09:37:18,520 INFO c.e.s.ExportImportConfigLoader [main] No of Config loaded ConfigLoadService : 202 
+2024-06-11 09:37:18,520 INFO c.e.s.ExportImportConfigLoader [main] Exit ConfigLoadService : onApplicationEvent() 
+2024-06-11 09:45:45,019 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m29s617ms604µs200ns).
+2024-06-11 09:52:27,515 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(21)-127.0.0.1] Application shutdown requested.
+2024-06-11 09:52:27,520 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(21)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-11 09:52:27,534 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(21)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-11 09:52:27,536 INFO c.z.h.HikariDataSource [RMI TCP Connection(21)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-06-11 09:52:27,548 INFO c.z.h.HikariDataSource [RMI TCP Connection(21)-127.0.0.1] HikariPool-1 - Shutdown completed.
+2024-06-11 14:45:35,671 INFO o.s.b.StartupInfoLogger [main] Starting ECrfServicesApplication using Java 17.0.11 with PID 9692 (C:\Users\SKTS Admin\Desktop\Backend\Backend\eCRF_Services_latest\target\classes started by SKTS Admin in C:\Users\SKTS Admin\Desktop\Backend\Backend\eCRF_Services_latest)
+2024-06-11 14:45:35,679 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-06-11 14:45:35,683 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2024-06-11 14:45:36,386 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-11 14:45:36,493 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 99 ms. Found 6 JPA repository interfaces.
+2024-06-11 14:45:36,945 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8080 (http)
+2024-06-11 14:45:36,957 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-11 14:45:36,962 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2024-06-11 14:45:36,962 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-06-11 14:45:37,025 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2024-06-11 14:45:37,026 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1296 ms
+2024-06-11 14:45:37,117 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'authenticationJwtTokenFilter' configured for use
+2024-06-11 14:45:37,235 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-11 14:45:37,296 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-06-11 14:45:37,327 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2024-06-11 14:45:37,430 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2024-06-11 14:45:37,595 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1e0294a7
+2024-06-11 14:45:37,596 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-06-11 14:45:37,629 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-11 14:45:37,815 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-11 14:45:38,073 WARN i.h.u.h.t.j.i.JsonJavaTypeDescriptor [main] The class java.lang.Object class should override both the equals and hashCode methods based on the JSON object value it represents!
+2024-06-11 14:45:38,909 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-11 14:45:38,982 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-11 14:45:39,218 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-06-11 14:45:39,318 INFO c.e.ECrfServicesApplication [main] Application Method Entry-getXLSReader()
+2024-06-11 14:45:39,319 INFO c.e.ECrfServicesApplication [main] Application Method Exit-getXLSReader()
+2024-06-11 14:45:39,697 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-11 14:45:40,076 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-11 14:45:40,097 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8080 (http) with context path ''
+2024-06-11 14:45:40,105 INFO o.s.b.StartupInfoLogger [main] Started ECrfServicesApplication in 4.93 seconds (process running for 6.146)
+2024-06-11 14:45:40,106 INFO c.e.s.ExportImportConfigLoader [main] Entry ExportImportConfigLoader : onApplicationEvent() 
+2024-06-11 14:45:40,107 INFO c.e.s.ExportImportConfigLoader [main] Entry ExportImportConfigLoader : loadConfigFromExcel() 
+2024-06-11 14:45:40,637 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='studyTitle', columnName='Protocol ID/Title', section='section1'}
+2024-06-11 14:45:40,637 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='projectNo', columnName='Sponsor Code / Name', section='section1'}
+2024-06-11 14:45:40,638 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='siteId', columnName='Site ID', section='section1'}
+2024-06-11 14:45:40,640 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='studyDate', columnName='Date', section='section1'}
+2024-06-11 14:45:40,643 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectId', columnName='Subject ID', section='section2'}
+2024-06-11 14:45:40,644 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectYear', columnName='Year of Birth (if avilable)', section='section2'}
+2024-06-11 14:45:40,645 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectUnknown', columnName='Year of Birth (Unknown)', section='section2'}
+2024-06-11 14:45:40,645 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectGender', columnName='Gender', section='section2'}
+2024-06-11 14:45:40,647 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='otherCheck', columnName='Ethnicity', section='section2'}
+2024-06-11 14:45:40,647 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='subjectOtherText', columnName='If Other Specify: _______', section='section2'}
+2024-06-11 14:45:40,648 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='placeOfBirthCity', columnName='Place of Birth City', section='section2'}
+2024-06-11 14:45:40,648 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='placeOfBirthState', columnName='Place of Birth State', section='section2'}
+2024-06-11 14:45:40,649 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='residencyCity', columnName='Residence City', section='section2'}
+2024-06-11 14:45:40,649 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='residencyState', columnName='Residence State', section='section2'}
+2024-06-11 14:45:40,649 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHcc', columnName='Date of HCC diagnosis', section='section3'}
+2024-06-11 14:45:40,649 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='baseLineIfDate', columnName='If date not available, Mention approximate year', section='section3'}
+2024-06-11 14:45:40,650 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='baseLineAgeOfHcc', columnName='Age at HCC Diagnosis (Completed years)', section='section3'}
+2024-06-11 14:45:40,650 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='baseLineHeight', columnName='Height (in cms)', section='section3'}
+2024-06-11 14:45:40,651 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='weightHggBaseLine', columnName='Weight (closest to the date of HCC diagnosis) in Kg', section='section3'}
+2024-06-11 14:45:40,652 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bmiBaseLine', columnName='Body Mass Index (BMI) Kg/m2', section='section3'}
+2024-06-11 14:45:40,653 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='insuranceValue', columnName='Type of insurance', section='section3'}
+2024-06-11 14:45:40,655 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='insuraceValueOtherBaseline', columnName='If Others', section='section3'}
+2024-06-11 14:45:40,655 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='insuraceDetailsBaseLine', columnName='Insurance Details', section='section3'}
+2024-06-11 14:45:40,655 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alanineValue', columnName='Alanine Aminotransferase(ALT)', section='section4'}
+2024-06-11 14:45:40,655 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alanineFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,655 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alanineTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,657 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Units/L', section=''}
+2024-06-11 14:45:40,657 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='aspartateValue', columnName='Aspartate aminotransferase(AST)', section='section4'}
+2024-06-11 14:45:40,658 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='aspartateFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,658 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='aspartateTo', columnName='Reference Range-Upper Limit', section='section4'}
+2024-06-11 14:45:40,658 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Units/L', section=''}
+2024-06-11 14:45:40,659 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bilirubinValue', columnName='Total Billirubin', section='section4'}
+2024-06-11 14:45:40,659 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bilirubinFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,659 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bilirubinTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,660 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 14:45:40,660 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alkalineValue', columnName='Alkaline Phosphatase (ALP)', section='section4'}
+2024-06-11 14:45:40,660 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alkalineFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,660 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alkalineTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,661 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Units/L', section=''}
+2024-06-11 14:45:40,661 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='albuminValue', columnName='Albumin', section='section4'}
+2024-06-11 14:45:40,661 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='albuminFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,662 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='albuminTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,662 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='g/ dL', section=''}
+2024-06-11 14:45:40,662 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='platelatesValue', columnName='Platelets', section='section4'}
+2024-06-11 14:45:40,663 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='platelatesFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,663 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='platelatesTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,663 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName=' k/μL (X 109 /μL)', section=''}
+2024-06-11 14:45:40,664 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='creatinineValue', columnName='Creatinine ', section='section4'}
+2024-06-11 14:45:40,664 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='creatinineFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,664 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='creatinineTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,664 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 14:45:40,664 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='prothrombinValue', columnName='Prothrombin Time (PT)', section='section4'}
+2024-06-11 14:45:40,665 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='prothrombinFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,665 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='prothrombinTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,665 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Seconds', section=''}
+2024-06-11 14:45:40,666 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='internationalValue', columnName='International normalized ratio (INR)', section='section4'}
+2024-06-11 14:45:40,666 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='internationalFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,666 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='internationalTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,667 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='N/A', section=''}
+2024-06-11 14:45:40,667 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alphaValue', columnName='Alpha-fetoprotein (AFP)', section='section4'}
+2024-06-11 14:45:40,667 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alphaFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,667 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alphaTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,668 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='ng/ mL', section=''}
+2024-06-11 14:45:40,668 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sodiumValue', columnName='Sodium (Na)', section='section4'}
+2024-06-11 14:45:40,669 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sodiumFrom', columnName='Reference Range-Lower Limit', section='section4'}
+2024-06-11 14:45:40,669 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sodiumTo', columnName='Reference Range-Higher Limit', section='section4'}
+2024-06-11 14:45:40,670 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='Mmol/l', section=''}
+2024-06-11 14:45:40,670 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bloodUreaValue', columnName='Blood Urea Nitrogen', section='section4'}
+2024-06-11 14:45:40,670 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bloodUreaFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 14:45:40,670 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='bloodUreaTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 14:45:40,670 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 14:45:40,670 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cholesterolValue', columnName='Cholesterol', section='section4'}
+2024-06-11 14:45:40,670 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cholesterolFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 14:45:40,671 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cholesterolTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 14:45:40,671 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 14:45:40,671 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='triglyceridesValue', columnName='Triglycerides', section='section4'}
+2024-06-11 14:45:40,671 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='triglyceridesFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 14:45:40,671 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='triglyceridesTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 14:45:40,671 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 14:45:40,672 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='highDensityValue', columnName='High Density Lipo-proteins(HDL)', section='section4'}
+2024-06-11 14:45:40,672 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='highDenistyFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 14:45:40,673 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='highDensityTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 14:45:40,675 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 14:45:40,675 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lowDensityValue', columnName='Low Density Lipo-protein(LDL)', section='section4'}
+2024-06-11 14:45:40,675 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lowDensityFrom', columnName='Reference Range - Lower Limit', section='section4'}
+2024-06-11 14:45:40,675 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lowDensityTo', columnName='Reference Range - Higher Limit', section='section4'}
+2024-06-11 14:45:40,676 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='mg/ dL', section=''}
+2024-06-11 14:45:40,677 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='modelEndStageLab', columnName='Model for End stage liver disease
+(Meld) Na score for Cirrhosis
+ Patients: Applicable / Not Applicable ', section='section4'}
+2024-06-11 14:45:40,677 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='modelEndStageTextArea', columnName='Model for End stage liver disease
+(Meld) Na score for Cirrhosis
+ Patients: if applicable, Score ________', section='section4'}
+2024-06-11 14:45:40,677 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='meldScoreLab', columnName='MELD Score', section='section4'}
+2024-06-11 14:45:40,679 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fib4Lab', columnName='FIB4', section='section4'}
+2024-06-11 14:45:40,680 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='astPlateletLab', columnName='AST to Platelet Ratio Index (APRI)', section='section4'}
+2024-06-11 14:45:40,681 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='diabetesComorbidities', columnName='Diabetes: Yes / No / Unknown', section='section5'}
+2024-06-11 14:45:40,681 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='diabetesAfter', columnName='Diabetes: if Yes (Prior To / After / NAV)', section='section5'}
+2024-06-11 14:45:40,681 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesDiabetesInput', columnName='Diabetes:if Yes, No.of Years', section='section5'}
+2024-06-11 14:45:40,683 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hypertensionComorbidities', columnName='Hypertension:Yes / No / Unknown', section='section5'}
+2024-06-11 14:45:40,683 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hypertensionAfter', columnName='Hypertension:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 14:45:40,684 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesHyperTensionInput', columnName='Hypertension:if Yes, No.of Years', section='section5'}
+2024-06-11 14:45:40,684 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dyslipidemiaComorbidities', columnName='Dyslipidemia:Yes / No / Unknown', section='section5'}
+2024-06-11 14:45:40,684 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dysliAfter', columnName='Dyslipidemia:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 14:45:40,685 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesDyslipidemiaInput', columnName='Dyslipidemia:if Yes, No.of Years', section='section5'}
+2024-06-11 14:45:40,685 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='coronaryComorbidities', columnName='Coronary artery disease:Yes / No / Unknown', section='section5'}
+2024-06-11 14:45:40,685 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='coronaryAfter', columnName='Coronary artery disease:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 14:45:40,685 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesCoronaryInput', columnName='Coronary artery disease:if Yes, No.of Years', section='section5'}
+2024-06-11 14:45:40,685 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='peripheralComorbidities', columnName='Peripheral Vascular Disease:Yes / No / Unknown', section='section5'}
+2024-06-11 14:45:40,685 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='peripheralAfter', columnName='Peripheral Vascular Disease:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 14:45:40,686 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesPeripheralInput', columnName='Peripheral Vascular Disease:if Yes, No.of Years', section='section5'}
+2024-06-11 14:45:40,686 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivComorbidities', columnName='HIV:Yes / No / Unknown', section='section5'}
+2024-06-11 14:45:40,686 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivAfter', columnName='HIV:if Yes (Prior To / After / NAV) ', section='section5'}
+2024-06-11 14:45:40,686 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesHivInput', columnName='HIV:if Yes, No.of Years', section='section5'}
+2024-06-11 14:45:40,687 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='nonLiverCancer', columnName='Non-liver Cancer:Yes / No ', section='section5'}
+2024-06-11 14:45:40,687 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesLocationSiteValue', columnName='Non-liver Cancer:if Yes, Location / Site _______', section='section5'}
+2024-06-11 14:45:40,687 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesStageValue', columnName='Non-liver Cancer:if Yes, Stage _______', section='section5'}
+2024-06-11 14:45:40,687 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yesYearOfDiagnosis', columnName='Non-liver Cancer:if Yes, Year of Diagnosis _______', section='section5'}
+2024-06-11 14:45:40,687 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alcoholConsumptionValue', columnName='Alcohol Consumption / Abuse', section='section5'}
+2024-06-11 14:45:40,687 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='alcoholConsumptionValueSub', columnName='Alcohol Consumption / Abuse:if Yes, Enter Comments_________', section='section5'}
+2024-06-11 14:45:40,687 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='diagnosisInformationValue', columnName='HCC diagnosis Information - Method of diagnosis', section='section6'}
+2024-06-11 14:45:40,688 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisInfoValueOtherSpecify', columnName='HCC diagnosis Information - Method of diagnosis:☐ Other (specify) __________________', section='section6'}
+2024-06-11 14:45:40,688 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='typeOfImagine', columnName='Type of Imaging ', section='section6'}
+2024-06-11 14:45:40,688 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='typeOfImagineText', columnName='Type of Imaging :☐ Other (specify) __________________', section='section6'}
+2024-06-11 14:45:40,688 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisImagingDate', columnName='Date of Imaging (first) Found', section='section6'}
+2024-06-11 14:45:40,690 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisImagingUnkown', columnName='Date of Imaging (first) Found:or ☐ Unknown', section='section6'}
+2024-06-11 14:45:40,690 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisTissueDate', columnName='Date of Tissue Diagnosis', section='section6'}
+2024-06-11 14:45:40,690 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccDiagnosisTissueUnknown', columnName='Date of Tissue Diagnosis:or ☐ Unknown', section='section6'}
+2024-06-11 14:45:40,690 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='largeTurmorValue', columnName='Largest tumor size/diameter (if multiple nodules, include only the largest)', section='section7'}
+2024-06-11 14:45:40,691 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tPrimaryValue', columnName='T (Primary tumor)(as per Current TNM HCC classification)', section='section7'}
+2024-06-11 14:45:40,691 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='nRegionalValue', columnName='N (Regional lymph nodes)        (as per Current TNM HCC classification)', section='section7'}
+2024-06-11 14:45:40,691 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='mRegionalValue', columnName='M (distant metastasis) (as per Current TNM HCC classification)', section='section7'}
+2024-06-11 14:45:40,691 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='anatomicStageTNM', columnName='Anatomic Stage(as per Current TNM HCC classification)', section='section7'}
+2024-06-11 14:45:40,691 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tumorDiffValue', columnName='Tumor Differentiation', section='section7'}
+2024-06-11 14:45:40,691 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='ecogperformace', columnName='ECOG performance score (or Karnofsky equivalent) (as per Current ECOG performance scale if applicable)', section='section7'}
+2024-06-11 14:45:40,691 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tumorStageValue', columnName='Tumor Stage', section='section7'}
+2024-06-11 14:45:40,692 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='typeOfVascular', columnName='Type of vascular invasion/extrahepatic spread', section='section7'}
+2024-06-11 14:45:40,692 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='microvascularInvasion', columnName='Is Microvascular invasion present on histology? (fill only if macrovascular invasion is absent', section='section7'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='tumorWithinMilan', columnName='Tumor within Milan Criteria', section='section7'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='childPughClassfication', columnName='Child-Pugh classification (at time of diagnosis)', section='section7'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='barcelonaClinic', columnName='Barcelona clinic liver cancer (BCLC) stage', section='section7'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fattyLiverCLD', columnName='Is fatty liver present?', section='section8'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fattyLiverRadioLast', columnName='Fatty liver diagnostic modality', section='section8'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='fattyLiverDiagnosticFreeText', columnName='Fatty liver diagnostic modality free text', section='section8'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='cirrhosisStatusValue', columnName='Cirrhosis Status', section='section8'}
+2024-06-11 14:45:40,693 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='mittalCriteriaValue', columnName='Mittal’s Criteria', section='section8'}
+2024-06-11 14:45:40,694 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='underlyingEtiologyValue', columnName='Underlying Etiology', section='section8'}
+2024-06-11 14:45:40,694 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='etiologyCirrhosisFreeValue', columnName='Etiology of Cirrhosis free text', section='section8'}
+2024-06-11 14:45:40,694 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='complicationCLD', columnName='Complications (at the time of HCC diagnosis)', section='section8'}
+2024-06-11 14:45:40,694 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hccOutcomeValue', columnName='Treatment modalities', section='section9'}
+2024-06-11 14:45:40,694 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='treamentModalitiesHCC', columnName='Treatment modalities explanation (free text)', section='section9'}
+2024-06-11 14:45:40,694 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='resectionPerformed', columnName='If resection was performed : Stage of fibrosis in background liver', section='section9'}
+2024-06-11 14:45:40,694 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='liverTransplantValue', columnName='If liver transplant was performed : Stage of fibrosis in explanted liver', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='recurrenceValue', columnName='Recurrence?', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfFirstRecurrence', columnName='Date of first recurrence', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='survivalStatusValue', columnName='Survival status', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfDeath', columnName='Date of death', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfDeathUnknown', columnName='Date of death Unknown', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfLastContact', columnName='Date of last contact (if patient is alive or dead 
+but unknown date of death)', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='lastContactUnknown', columnName='Date of last contact (if patient is alive or dead 
+but unknown date of death) Unknown', section='section9'}
+2024-06-11 14:45:40,695 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfRecurrenceFree', columnName='Recurrence-free survival (days)', section='section9'}
+2024-06-11 14:45:40,696 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='selectedDateOfOverallSurvival', columnName='Overall survival (days)', section='section9'}
+2024-06-11 14:45:40,696 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='screeningQuestion', columnName='how was the HCC diagnosed?', section='section10'}
+2024-06-11 14:45:40,696 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='screening2Years', columnName='Any method of screening found within 2 years 
+before HCC diagnosis?', section='section10'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='screening1Year', columnName='Any method of screening found within 1 year 
+before HCC diagnosis?', section='section10'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='methodOfScreening', columnName='Method of screening?', section='section10'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='methodOfScreeningTxt', columnName='Method of screening? : other', section='section10'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='historyHIV', columnName='History of HIV', section='section11'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yearOfHIVHCC', columnName='Year of HIV diagnosis', section='section11'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHIVDurationFrom', columnName='Duration of HIV (years)', section='section11'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivRNAHCC', columnName='HIV RNA Level (most recent)', section='section11'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='belowRadioHCC', columnName='If HIV RNA level is below lower limit of detection, (Fill the following)', section='section11'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivCD4', columnName='CD4 (%) (Clusters of differentiation 4)', section='section11'}
+2024-06-11 14:45:40,700 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivAbsoluteCD4', columnName='Absolute CD4 (cells/uL)', section='section11'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivCD4CellCount', columnName='CD4 Cell Count Nadir (if known)', section='section11'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hivInitialHIV1', columnName='Initial HIV-1 RNA Level (if known)', section='section11'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='maximumHIVRNA', columnName='Maximum HIV-1 RNA Level (if known)', section='section11'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isDateHCVDiagnosis', columnName='Is date of HCV diagnosis known?', section='section12'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHCVCVirus', columnName='Date of HCV diagnosis', section='section12'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isHCViralCVirus', columnName='Is HCV viral load known', section='section12'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='HCVviralTimeOfHCCDiagnosis', columnName='HCV viral load at time of HCC diagnosis', section='section12'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvGenotype', columnName='HCV genotype', section='section12'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='wasHCVReceivedBeforeAfter', columnName='Was HCV treatment received before or 
+after initial HCC diagnosis?', section='section12'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvTreatmentCVirus', columnName='HCV treatment type', section='section12'}
+2024-06-11 14:45:40,701 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvTreatedYear', columnName='When was HCV treated (year)', section='section12'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvViralLoadAfterTreatment', columnName='Is HCV viral load after treatment known?', section='section12'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvPostTreatment', columnName='HCV viral load post treatment', section='section12'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='sustainedHCV', columnName='"Sustained virological response (SVR) after 
+HCV treatment (undetectable HCV RNA 
+12 weeks after completion of treatment"', section='section12'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='yearSVRHCV', columnName='Year SVR achieved', section='section12'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isDateHBVDiagnosis', columnName='Is date of HBV diagnosis known?', section='section13'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHBVBVirus', columnName='Date of HBV diagnosis', section='section13'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='isHBViralBVirus', columnName='Is HBV viral load known', section='section13'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='HBVviralTimeOfHCCDiagnosis', columnName='HBV viral load at time of HCC diagnosis', section='section13'}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 14:45:40,702 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='wasHBVReceivedBeforeAfter', columnName='Was HBV treatment received before or 
+after initial HCC diagnosis?', section='section13'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hcvTreatmentBVirus', columnName='HCV treatment type', section='section13'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='dateOfHBVTreatmentYear', columnName='When was HBV treated (year)', section='section13'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hbvViralLoadAfterTreatment', columnName='Is HBV viral load after treatment known?', section='section13'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='hbvPostTreatment', columnName='HBV viral load post treatment', section='section13'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='null', columnName='IU /ml', section=''}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='changedBy', columnName='changed By', section='section14'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='changedOn', columnName='changed On', section='section14'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='createdBy', columnName='created By', section='section14'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] ExportImportConfig{databaseKey='createdOn', columnName='created On', section='section14'}
+2024-06-11 14:45:40,703 INFO c.e.s.ExportImportConfigLoader [main] Exit ExportImportConfigLoader : loadConfigFromExcel() 
+2024-06-11 14:45:40,704 INFO c.e.s.ExportImportConfigLoader [main] No of Config loaded ConfigLoadService : 202 
+2024-06-11 14:45:40,704 INFO c.e.s.ExportImportConfigLoader [main] Exit ConfigLoadService : onApplicationEvent() 
+2024-06-11 14:59:26,514 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m18s764ms621µs600ns).
+2024-06-11 15:05:16,801 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m50s243ms545µs).
+2024-06-11 15:18:54,321 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m7s366ms614µs800ns).
+2024-06-11 15:19:23,067 INFO o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(32)-127.0.0.1] Application shutdown requested.
+2024-06-11 15:19:23,072 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(32)-127.0.0.1] Stopping ProtocolHandler ["http-nio-8080"]
+2024-06-11 15:19:23,091 INFO o.s.o.j.AbstractEntityManagerFactoryBean [RMI TCP Connection(32)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-11 15:19:23,093 INFO c.z.h.HikariDataSource [RMI TCP Connection(32)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+2024-06-11 15:19:23,103 INFO c.z.h.HikariDataSource [RMI TCP Connection(32)-127.0.0.1] HikariPool-1 - Shutdown completed.
